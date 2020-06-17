@@ -52,6 +52,7 @@ class CheckListTableViewController: UITableViewController {
         
         let checkBox = CheckBox()
         checkBox.delegate = self
+        
         //this is for Level 0
         let item = data[section]
         let model = CheckBoxModel(id: item.id, type: .full, state: item.state, label: item.label, level: item.level)
